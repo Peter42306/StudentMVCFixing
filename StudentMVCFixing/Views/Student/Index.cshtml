@@ -1,0 +1,26 @@
+﻿@model StudentMVCFixing.Models.Student
+
+<div style="padding-top:30px">
+	<h3>Students List</h3>
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Surname</th>
+				<th>Age</th>
+				<th>GPA</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var student in ViewBag.Students)
+			{
+				<tr>
+					<td>@student.Name</td>
+					<td>@student.Surname</td>
+					<td>@student.Age</td>
+					<td>@student.GPA</td>
+				</tr>
+			}
+		</tbody>		
+	</table>
+</div>
