@@ -6,7 +6,7 @@ namespace StudentMVCFixing.Controllers
 {
     public class StudentController : Controller
     {
-        StudentContext _studentContext;
+        private readonly StudentContext _studentContext;
 
         public StudentController(StudentContext studentContext)
         {
